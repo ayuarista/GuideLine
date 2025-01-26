@@ -19,13 +19,23 @@
                 <h1 class="text-xl font-bold">GuideLine</h1>
             </div>
         </div>
-        <div class="inset-0 fixed bg-white w-[60%]"
-        x-show="open" @click.outside="false">
+        <div class="inset-0 fixed bg-white w-[60%] p-5"
+        x-show="open" 
+        @click.outside="open = false"
+        x-transition:enter="transition-transform ease-in duration-500"
+        x-transition:enter-start="-translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition-transform ease-out duration-500"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="-translate-x-full">
         <button @click="open = false">
-            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="close-outline" class="text-2xl cursor-pointer"></ion-icon>
         </button>
             <nav>
                 <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="">Home</a></li>
                 </ul>
             </nav>
