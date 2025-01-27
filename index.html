@@ -75,6 +75,29 @@
         <h4>Hello World</h4>
         <h5>Hello World</h5>
         <h6>Hello World</h6>
+        <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+            <!-- Dropdown -->
+            <div x-data="{ open: false }" class="relative">
+              <!-- Button -->
+              <button 
+                @click="open = !open" 
+                class="px-4 py-2 text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+              >
+                Dropdown
+              </button>
+              
+              <!-- Dropdown Menu -->
+              <div 
+                x-show="open" 
+                @click.away="open = false"
+                class="absolute mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+              >
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 3</a>
+              </div>
+            </div>
     </main>
     
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
