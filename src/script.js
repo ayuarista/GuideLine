@@ -42,3 +42,17 @@ function popularPlace(){
         ]
     }
 }
+
+function trendingPlace(){
+    return{
+        items:[
+            {
+                id: 1,
+                image: "",
+                title: "Beijing Tour",
+                price: "Rp. 5.500.000",
+                rating: "4.8(329"
+            }
+        ]
+    }
+}
