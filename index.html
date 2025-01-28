@@ -84,23 +84,28 @@
                 <h1 class="font-semibold text-3xl">Select Category</h1>
                 <p class="text-gray-400 text-base">Let’s enjoy this heaven on earth</p>
             </div>
-            <div class="grid-cols-2 lg:grid-cols-4">
-                <div class="p-6 max-w-80 rounded-lg shadow-2xl">
-                    <div class="relative">
-                        <ion-icon name="partly-sunny-outline" class="text-3xl text-blue-600"></ion-icon>
-                        <h1 class="text-xl font-semibold">Beach</h1>
-                        <p class="text-gray-400 text-sm">see all activities</p>
-
-                        <div class="absolute px-5 py-1 rounded-md bg-yellow-200 top-0 right-0">
-                            <span class="text-yellow-500 font-medium text-sm">4.9</span>
-                        </div>
+            <div x-data="categoryItem()">
+                <div class="grid grid-cols-2 lg:grid-cols-4">
+                    <template x-for="item in items" :key="item.id">
+                            <div class="p-6 max-w-80 rounded-lg shadow-2xl">
+                                <div class="relative">
+                                    <ion-icon :name="item.icon" class="text-3xl text-blue-600"></ion-icon>
+                                    <h1 class="text-xl font-semibold" x-text="item.name"></h1>
+                                    <p class="text-gray-400 text-sm">see all activities</p>
+            
+                                    <div class="absolute px-5 py-1 rounded-md bg-yellow-200 top-0 right-0">
+                                        <span class="text-yellow-500 font-medium text-sm" x-text="item.rating"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
                     </div>
                 </div>
-            </div>
         </section>
         
     </main>
     
+    <script src="./src/script.js"></script>
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
