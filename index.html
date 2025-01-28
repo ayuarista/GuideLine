@@ -107,22 +107,22 @@
                 <h1 class="font-semibold text-2xl">Popular Place</h1>
                 <p class="text-gray-400 text-sm">Let’s enjoy this heaven on earth</p>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
-                <!-- <template> -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-3" x-data="popularPlace()">
+                <template x-for="item in items" :key="item.id">
                     <div>
-                        <img src="./src/assets/hero.jpg" alt="" class="w-60 h-52 object-cover rounded-lg">
+                        <img :src="item.image" alt="" class="w-60 h-52 object-cover rounded-lg">
                         <div class="mt-2 relative">
-                            <h1 class="text-xl font-semibold">Indonesia</h1>
+                            <h1 class="text-xl font-semibold" x-text="item.title"></h1>
                             <div class="flex items-center gap-2">
                                 <ion-icon name="location-outline" class="text-[18px] text-blue-600"></ion-icon>
-                                <p class="text-gray-400 text-[13px] mt-1">Bali, Nusa Penida</p>
+                                <p class="text-gray-400 text-[13px] mt-1" x-text="item.location"></p>
                             </div>
-                            <div class="absolute bg-red-400 px-4 py-1 rounded-full inset-0-0">
-                                <span class="text-red-900">20%</span>
+                            <div class="absolute bottom-56 left-3">
+                                <span class="text-red-900 bg-red-400 px-4 py-1 rounded-full" x-text="item.discount"></span>
                             </div>
                         </div>
                     </div>
-                <!-- </template> -->
+                </template>
             </div>
         </section>
     </main>
