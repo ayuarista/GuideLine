@@ -82,10 +82,10 @@ function trendingPlace(){
             {
                 id: 4,
                 image: "https://images.unsplash.com/photo-1700880325435-d13cbf5d698f?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                title: "Beijing Tour",
+                title: "Paris Tour",
                 desc: "gave an experience, never you felt before.",
-                price: "Rp. 5.500.000",
-                rating: "4.8 (329)",
+                price: "Rp. 15.500.000",
+                rating: "4.8 (10.872)",
                 star: 4,
                 duration: "8 days",
                 facilities: ["breakfast", "wifi"]
