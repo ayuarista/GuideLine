@@ -48,7 +48,7 @@ function trendingPlace(){
         items:[
             {
                 id: 1,
-                image: "",
+                image: "https://images.unsplash.com/photo-1736185669686-f302d6274f23?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 title: "Beijing Tour",
                 desc: "gave an experience, never you felt before.",
                 price: "Rp. 5.500.000",
