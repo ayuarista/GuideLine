@@ -1826,6 +1826,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[19px\] {
+    font-size: 19px;
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
