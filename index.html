@@ -110,14 +110,14 @@
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-3 place-items-center" x-data="popularPlace()">
                 <template x-for="item in items" :key="item.id">
                     <div>
-                        <img :src="item.image" alt="" class="w-64 h-52 object-cover rounded-lg">
+                        <img :src="item.image" alt="" class="w-[17rem] h-[14rem] object-cover rounded-lg">
                         <div class="mt-2 relative">
                             <h1 class="text-xl font-semibold" x-text="item.title"></h1>
                             <div class="flex items-center gap-2">
                                 <ion-icon name="location-outline" class="text-[18px] text-blue-600"></ion-icon>
                                 <p class="text-gray-400 text-[13px] mt-1" x-text="item.location"></p>
                             </div>
-                            <div class="absolute bottom-56 left-3">
+                            <div class="absolute bottom-60 left-3">
                                 <span class="text-red-900 bg-red-400 px-4 py-1 rounded-full" x-text="item.discount"></span>
                             </div>
                         </div>
