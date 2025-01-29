@@ -162,10 +162,10 @@
                             <ion-icon name="time-outline" class="text-blue-600 text-base"></ion-icon>
                             <p class="text-sm" x-text="item.duration"></p>
                         </div>
-                        <template x-for="i in item.facilities">
+                        <template x-for="facility in item.facilities" :key="facility">
                             <div class="flex items-center gap-1">
                                 <ion-icon name="checkmark-outline" class="text-base text-blue-600"></ion-icon>
-                                <span class="text-sm" x-text="item.facilities"></span>
+                                <span class="text-sm" x-text="facility"></span>
                             </div>
                         </template>
                         </div>
