@@ -162,14 +162,12 @@
                             <ion-icon name="time-outline" class="text-blue-600 text-base"></ion-icon>
                             <p class="text-sm" x-text="item.duration"></p>
                         </div>
-                        <div class="flex items-center gap-1">
-                            <ion-icon name="checkmark-outline" class="text-base text-blue-600"></ion-icon>
-                            <span class="text-sm">breakfast</span>
-                        </div>
+                        <template x-for="i in item.facilities">
                             <div class="flex items-center gap-1">
                                 <ion-icon name="checkmark-outline" class="text-base text-blue-600"></ion-icon>
-                                <span class="text-sm">wifi</span>
+                                <span class="text-sm" x-text="item.facilities"></span>
                             </div>
+                        </template>
                         </div>
                     </div>
                 </template>
