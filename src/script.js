@@ -59,7 +59,29 @@ function trendingPlace(){
             },
             {
                 id: 2,
-                image: "https://images.unsplash.com/photo-1736185669686-f302d6274f23?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                image: "https://images.unsplash.com/photo-1529551739587-e242c564f727?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                title: "Dubai Tour",
+                desc: "gave an experience, never you felt before.",
+                price: "Rp. 5.500.000",
+                rating: "4.8 (329)",
+                star: 4,
+                duration: "8 days",
+                facilities: ["breakfast", "wifi"]
+            },
+            {
+                id: 3,
+                image: "https://images.unsplash.com/photo-1592988008857-f73f31949462?q=80&w=1794&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                title: "USA Tour",
+                desc: "gave an experience, never you felt before.",
+                price: "Rp. 5.500.000",
+                rating: "4.8 (329)",
+                star: 4,
+                duration: "8 days",
+                facilities: ["breakfast", "wifi"]
+            },
+            {
+                id: 4,
+                image: "",
                 title: "Beijing Tour",
                 desc: "gave an experience, never you felt before.",
                 price: "Rp. 5.500.000",
@@ -67,7 +89,51 @@ function trendingPlace(){
                 star: 4,
                 duration: "8 days",
                 facilities: ["breakfast", "wifi"]
-            }
+            },
+            {
+                id: 5,
+                image: "",
+                title: "Beijing Tour",
+                desc: "gave an experience, never you felt before.",
+                price: "Rp. 5.500.000",
+                rating: "4.8 (329)",
+                star: 4,
+                duration: "8 days",
+                facilities: ["breakfast", "wifi"]
+            },
+            {
+                id: 6,
+                image: "",
+                title: "Beijing Tour",
+                desc: "gave an experience, never you felt before.",
+                price: "Rp. 5.500.000",
+                rating: "4.8 (329)",
+                star: 4,
+                duration: "8 days",
+                facilities: ["breakfast", "wifi"]
+            },
+            {
+                id: 7,
+                image: "",
+                title: "Beijing Tour",
+                desc: "gave an experience, never you felt before.",
+                price: "Rp. 5.500.000",
+                rating: "4.8 (329)",
+                star: 4,
+                duration: "8 days",
+                facilities: ["breakfast", "wifi"]
+            },
+            {
+                id: 8,
+                image: "",
+                title: "Beijing Tour",
+                desc: "gave an experience, never you felt before.",
+                price: "Rp. 5.500.000",
+                rating: "4.8 (329)",
+                star: 4,
+                duration: "8 days",
+                facilities: ["breakfast", "wifi"]
+            },
         ]
     }
 }
