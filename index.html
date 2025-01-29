@@ -133,12 +133,13 @@
             <div class="grid grid-cols-2 lg:grid-cols-4" x-data="trendingPlace()">
                 <template x-for="item in items" :key="item.id">
                     <div class="mt-5">
-                        <img :src="item.image" alt="Tour Image" class="rounded-lg w-72 h-36 object-cover bg-center">
+                        <img :src="item.image" alt="" class="rounded-lg w-72 h-36 object-cover bg-center">
                         <div class="flex items-center mt-2">
                             <div>
-                                <h1 class="text-xl font-semibold" x-text="item.title"></h1>
+                                <h1 class="text-xl font-semibold">Beijing Tour</h1>
+                                <p class="text-xs text-gray-400 mt-1">gave an experience, never you felt before.</p>
                             </div>
-                            <div>
+                            <div class="">
                                 <ion-icon name="heart-outline" class="rounded-full p-2 border border-black"></ion-icon>
                             </div>
                         </div>
@@ -146,14 +147,28 @@
                         <div class="flex items-center justify-between">
                             <div>
                                 <p class="text-xs text-gray-400">Start From</p>
-                                <h1 class="font-semibold text-xl" x-text="item.price"></h1>
+                                <h1 class="font-semibold text-xl">Rp. 5.500.000</h1>
                             </div>
-                            <div class="flex items-center">
-                                <!-- Looping Bintang Berdasarkan Rating -->
-                                <template x-for="i in item.stars">
-                                    <ion-icon name="star" class="text-yellow-400"></ion-icon>
-                                </template>
-                                <p class="text-gray-400 text-xs ml-2" x-text="item.rating"></p>
+                            <div>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <p class="text-gray-400 text-xs mt-1">4.8(329)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 mt-3">
+                        <div class="flex items-center gap-1">
+                            <ion-icon name="time-outline" class="text-blue-600 text-base"></ion-icon>
+                            <p class="text-sm">8 days</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <ion-icon name="checkmark-outline" class="text-base text-blue-600"></ion-icon>
+                            <span class="text-sm">breakfast</span>
+                        </div>
+                            <div class="flex items-center gap-1">
+                                <ion-icon name="checkmark-outline" class="text-base text-blue-600"></ion-icon>
+                                <span class="text-sm">wifi</span>
                             </div>
                         </div>
                     </div>

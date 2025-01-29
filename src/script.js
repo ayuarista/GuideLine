@@ -54,22 +54,6 @@ function trendingPlace() {
                 rating: "4.8 (329)",
                 stars: Math.floor(4.8) // Akan menampilkan 4 bintang
             },
-            {
-                id: 2,
-                image: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=870&auto=format&fit=crop",
-                title: "Bali Getaway",
-                price: "Rp. 4.500.000",
-                rating: "4.9 (287)",
-                stars: Math.floor(4.9) // Akan menampilkan 4 bintang
-            },
-            {
-                id: 3,
-                image: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=870&auto=format&fit=crop",
-                title: "Japan Adventure",
-                price: "Rp. 7.500.000",
-                rating: "3.2 (210)",
-                stars: Math.floor(3.2) // Akan menampilkan 3 bintang
-            }
         ]
     };
 }
