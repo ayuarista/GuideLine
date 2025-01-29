@@ -43,18 +43,17 @@ function popularPlace(){
     }
 }
 
-function trendingPlace() {
-    return {
-        items: [
+function trendingPlace(){
+    return{
+        items:[
             {
                 id: 1,
-                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=870&auto=format&fit=crop",
+                image: "",
                 title: "Beijing Tour",
+                desc: "gave an experience, never you felt before.",
                 price: "Rp. 5.500.000",
-                rating: "4.8 (329)",
-                stars: Math.floor(4.8) // Akan menampilkan 4 bintang
-            },
+                rating: "4.8(329"
+            }
         ]
-    };
+    }
 }
-
