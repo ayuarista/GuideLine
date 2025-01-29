@@ -147,13 +147,13 @@
                         <div class="flex items-center justify-between">
                             <div>
                                 <p class="text-xs text-gray-400">Start From</p>
-                                <h1 class="font-semibold text-xl">Rp. 5.500.000</h1>
+                                <h1 class="font-semibold text-xl" x-text="item.price"></h1>
                             </div>
                             <div>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
+                                <template x-for="i in Math.floor(item.star)">
+                                    
+                                    <ion-icon name="star" class="text-yellow-400"></ion-icon>
+                                </template>
                                 <p class="text-gray-400 text-xs mt-1">4.8(329)</p>
                             </div>
                         </div>

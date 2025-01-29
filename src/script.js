@@ -52,7 +52,8 @@ function trendingPlace(){
                 title: "Beijing Tour",
                 desc: "gave an experience, never you felt before.",
                 price: "Rp. 5.500.000",
-                rating: "4.8(329"
+                rating: "4.8 (329)",
+                star: 3
             }
         ]
     }
