@@ -130,16 +130,15 @@
                 <h1 class="font-semibold text-2xl">Trending Place 2025</h1>
                 <p class="text-gray-400 text-sm">Let’s enjoy this heaven on earth</p>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-4">
-                <!-- <template> -->
+            <div class="grid grid-cols-2 lg:grid-cols-4" x-data="trendingPlace()">
+                <template x-for="item in items" :key="item.id">
                     <div class="mt-5">
-                        <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="rounded-lg w-72 h-36 object-cover bg-center">
+                        <img :src="item.image" alt="Tour Image" class="rounded-lg w-72 h-36 object-cover bg-center">
                         <div class="flex items-center mt-2">
                             <div>
-                                <h1 class="text-xl font-semibold">Beijing Tour</h1>
-                                <p class="text-xs text-gray-400 mt-1">gave an experience, never you felt before.</p>
+                                <h1 class="text-xl font-semibold" x-text="item.title"></h1>
                             </div>
-                            <div class="">
+                            <div>
                                 <ion-icon name="heart-outline" class="rounded-full p-2 border border-black"></ion-icon>
                             </div>
                         </div>
@@ -147,32 +146,18 @@
                         <div class="flex items-center justify-between">
                             <div>
                                 <p class="text-xs text-gray-400">Start From</p>
-                                <h1 class="font-semibold text-xl">Rp. 5.500.000</h1>
+                                <h1 class="font-semibold text-xl" x-text="item.price"></h1>
                             </div>
-                            <div>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <p class="text-gray-400 text-xs mt-1">4.8(329)</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3 mt-3">
-                        <div class="flex items-center gap-1">
-                            <ion-icon name="time-outline" class="text-blue-600 text-base"></ion-icon>
-                            <p class="text-sm">8 days</p>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <ion-icon name="checkmark-outline" class="text-base text-blue-600"></ion-icon>
-                            <span class="text-sm">breakfast</span>
-                        </div>
-                            <div class="flex items-center gap-1">
-                                <ion-icon name="checkmark-outline" class="text-base text-blue-600"></ion-icon>
-                                <span class="text-sm">wifi</span>
+                            <div class="flex items-center">
+                                <!-- Looping Bintang Berdasarkan Rating -->
+                                <template x-for="i in item.stars">
+                                    <ion-icon name="star" class="text-yellow-400"></ion-icon>
+                                </template>
+                                <p class="text-gray-400 text-xs ml-2" x-text="item.rating"></p>
                             </div>
                         </div>
                     </div>
-                <!-- </template> -->
+                </template>
             </div>
         </section>
     </main>
