@@ -96,14 +96,14 @@ function trendingPlace(){
                 title: "Japan Tour",
                 desc: "gave an experience, never you felt before.",
                 price: "Rp. 5.500.000",
-                rating: "4.8 (329)",
+                rating: "4.9 (20.735)",
                 star: 4,
-                duration: "8 days",
+                duration: "4 days",
                 facilities: ["breakfast", "wifi"]
             },
             {
                 id: 6,
-                image: "",
+                image: "https://images.unsplash.com/photo-1718910690209-4901217cb277?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 title: "Beijing Tour",
                 desc: "gave an experience, never you felt before.",
                 price: "Rp. 5.500.000",
