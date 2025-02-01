@@ -194,9 +194,9 @@ function recommendedPlace() {
       },
       {
         id: 2,
-        img: "https://images.unsplash.com/photo-1712848246116-58d99bcd0f4a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        title: "Great Wall",
-        desc: "Historic fortification",
+        img: "https://images.unsplash.com/photo-1738181574880-5ce241952f83?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Santorini",
+        desc: "Scenic island",
       },
       {
         id: 3,
@@ -212,9 +212,9 @@ function recommendedPlace() {
       },
       {
         id: 5,
-        img: "https://images.unsplash.com/photo-1738181574880-5ce241952f83?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        title: "Santorini",
-        desc: "Scenic island",
+        img: "https://images.unsplash.com/photo-1712848246116-58d99bcd0f4a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Great Wall",
+        desc: "Historic fortification",
       },
       {
         id: 6,
