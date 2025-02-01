@@ -127,6 +127,20 @@
             </div>
         </section>
         <section class="lg:mx-12 mx-8 mt-10">
+            <div class="flex gap-3 justify-center items-center" x-data="recommendedPlace()">
+                <template x-for="item in items" :key="item.id">
+                    <div class="group flex-1 h-[400px] overflow-hidden rounded-lg transition-[flex] duration-500 ease-in-out relative cursor-pointer hover:flex-3">
+                        <img :src="item.img" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute bottom-4 left-4 opacity-100 transition-opacity duration-500">
+                            <h1 class="text-xl font-semibold text-white" x-text="item.title"></h1>
+                            <p class="text-gray-300 text-sm" x-text="item.desc"></p>
+                        </div>
+                    </div>
+                </template>
+            </div>            
+        </section>
+        <section class="lg:mx-12 mx-8 mt-10">
             <div>
                 <h1 class="font-semibold text-2xl">Trending Place 2025</h1>
                 <p class="text-gray-400 text-sm">Let’s enjoy this heaven on earth</p>
